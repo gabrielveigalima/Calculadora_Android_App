@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/darker_gray"
+    tools:context="gabrielveigalima.com.calculadora.MainActivity">
+
+    <EditText
+        android:id="@+id/telaId"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="@android:color/background_light"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="40sp"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="28dp" />
+
+    <Button
+        android:id="@+id/botao1"
+        android:layout_width="@dimen/larguraBotaoNumeros"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/telaId"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="20dp"
+        android:text="1"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botao2"
+        android:layout_width="@dimen/larguraBotaoNumeros"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignBaseline="@+id/botao1"
+        android:layout_alignBottom="@+id/botao1"
+        android:layout_toEndOf="@+id/botao1"
+        android:layout_toRightOf="@+id/botao1"
+        android:text="2"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botao3"
+        android:layout_width="@dimen/larguraBotaoNumeros"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignBaseline="@+id/botao2"
+        android:layout_alignBottom="@+id/botao2"
+        android:layout_toEndOf="@+id/botao2"
+        android:layout_toRightOf="@+id/botao2"
+        android:text="3"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botao4"
+        android:layout_width="@dimen/larguraBotaoNumeros"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignLeft="@+id/botao1"
+        android:layout_alignStart="@+id/botao1"
+        android:layout_below="@+id/botao3"
+        android:text="4"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botao5"
+        android:layout_width="@dimen/larguraBotaoNumeros"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignBottom="@+id/botao4"
+        android:layout_alignLeft="@+id/botao2"
+        android:layout_alignStart="@+id/botao2"
+
+        android:text="5"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botao6"
+        android:layout_width="@dimen/larguraBotaoNumeros"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignLeft="@+id/botao3"
+        android:layout_alignStart="@+id/botao3"
+        android:layout_below="@+id/botao2"
+        android:text="6"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botao7"
+        android:layout_width="@dimen/larguraBotaoNumeros"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignLeft="@+id/botao4"
+        android:layout_alignStart="@+id/botao4"
+        android:layout_below="@+id/botao4"
+        android:text="7"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botao8"
+        android:layout_width="@dimen/larguraBotaoNumeros"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_below="@+id/botao6"
+        android:layout_toEndOf="@+id/botao4"
+        android:layout_toRightOf="@+id/botao4"
+        android:text="8"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botao9"
+        android:layout_width="@dimen/larguraBotaoNumeros"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignTop="@+id/botao8"
+        android:layout_toEndOf="@+id/botao8"
+        android:layout_toRightOf="@+id/botao8"
+        android:text="9"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2017 - Gabriel Lima"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/botaoIgual"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:text="="
+        android:textSize="30sp"
+        android:layout_below="@+id/botao7"
+        android:layout_alignRight="@+id/botao9"
+        android:layout_alignEnd="@+id/botao9"
+        android:layout_toRightOf="@+id/botao8"
+        android:layout_toEndOf="@+id/botao8" />
+
+    <Button
+        android:id="@+id/botaoSoma"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignBottom="@+id/botao3"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:text="+"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botaoSubitracao"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignBaseline="@+id/botao6"
+        android:layout_alignBottom="@+id/botao6"
+        android:layout_alignLeft="@+id/botaoSoma"
+        android:layout_alignStart="@+id/botaoSoma"
+        android:text="-"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botaoMultiplicacao"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignLeft="@+id/botaoSubitracao"
+        android:layout_alignStart="@+id/botaoSubitracao"
+        android:layout_below="@+id/botaoSubitracao"
+        android:text="x"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/botaoDivisao"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignLeft="@+id/botaoMultiplicacao"
+        android:layout_alignStart="@+id/botaoMultiplicacao"
+        android:layout_below="@+id/botao9"
+        android:text="÷"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botao0"
+        android:layout_width="@dimen/larguraBotaoNumeros"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignBottom="@+id/botaoDivisao"
+        android:layout_alignLeft="@+id/botao7"
+        android:layout_alignStart="@+id/botao7"
+        android:text="0"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botaoPonto"
+        android:layout_width="@dimen/larguraBotaoNumeros"
+        android:layout_height="@dimen/alturaBotaoNumeros"
+        android:layout_alignBottom="@+id/botao0"
+        android:layout_toEndOf="@+id/botao0"
+        android:layout_toRightOf="@+id/botao0"
+        android:text="."
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/botaoApagarId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:text="AC"
+        android:textSize="24sp" />
+
+</RelativeLayout>
